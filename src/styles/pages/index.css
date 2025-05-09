@@ -15,7 +15,6 @@
 
 /* Right side */
 
-
 .register_section, .join_title {
     display: flex;
 }
@@ -190,6 +189,10 @@
 
 @media (max-width: 500px) {
 
+    .register_section {
+        padding: 0 2rem;
+    }
+
     .labelline {
         font-size: 10px;
     }
@@ -206,14 +209,14 @@
     .input_style{
         border: 1px solid #ffffff;
         border-radius: 7px;
-        padding: 0.1rem 0.2rem;
+        padding: 0.5rem 0.2rem;
         font-size: 10px;
         margin-top: 0.4rem;
         margin-bottom: 0.4rem;
     }
 
     .join_title h2 {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .login_btn {
@@ -230,13 +233,13 @@
     }
 
     .labelline {
-        font-size: 8px;
+        font-size: 12px;
         left: 5px;
     }
 
     .input_style:focus + .labelline,
     .input_style:valid + .labelline {
-        font-size: 6px;
+        font-size: 10px;
     }
     
 }
