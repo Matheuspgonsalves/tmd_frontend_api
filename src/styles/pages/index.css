@@ -10,6 +10,7 @@
     background-color: rgb(230, 230, 230);
     grid-column: 1/2;
     grid-row: 1/2;
+    background-image: url("../../assets/images/background-register-pc.png");
 }
 
 /* Right side */
@@ -25,7 +26,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 4rem;
-    background-color: rgb(77, 60, 155);
+    background-color: #5A32B0;
 }
 
 .join_title {
@@ -54,24 +55,24 @@
     padding: 0.6rem 0.8rem;
     outline: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 18px;
     font-family: var(--font-alt);
-    background-color: #d4d4d4;
+    background-color: #7977e2;
     cursor: pointer;
     transition: 0.4s all;
     font-weight: 600;
 }
 
 .login_btn:hover {
-    background-color: #adadad;
+    background-color: #4c4ae270;
 }
 
 /* Padrão de estilo dos input text */
 .input_style{
     padding: 0.3rem;
-    border: 2px solid #f0ffff;
-    border-radius: 10px;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
     outline: none;
     padding: 0.5rem 0.8rem;
     width: 100%;
@@ -90,14 +91,13 @@
 
 .input_style:focus,
 .input_style:valid {
-    color: #66ff00;
-    border: 2px solid #66ff00;
+    color: #ad55d3;
+    border: 2px solid #ad55d3;
 }
 
 .input_style:focus + .labelline,
 .input_style:valid + .labelline{
-    color: #66ff00;
-    background-color: rgb(77, 60, 155);
+    background-color: #5A32B0;
     transform: translateY(-150%);
     z-index: 1111;
     font-size: 14px;
@@ -121,6 +121,7 @@
     top: 50%;
     transform: translateY(-50%);
     transition: 0.2s ease;
+    color: #ad55d3;
 }
 
 .fullname_input > input {
@@ -136,10 +137,10 @@
     padding: 0.6rem 0.8rem;
     outline: none;
     border: none;
-    border-radius: 20px;
+    border-radius: 50px;
     font-size: 18px;
     font-family: var(--font-alt);
-    background-color: #d4d4d4;
+    background-color: #D1D1D1;
     cursor: pointer;
     transition: 0.4s all;
     font-weight: 600;
@@ -148,7 +149,7 @@
 }
 
 .register_btn:hover {
-    background-color: #adadad;
+    background-color: #d1d1d1ce;
 }
 
 
