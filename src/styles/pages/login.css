@@ -1,0 +1,227 @@
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* Left side */
+.background {
+    background-color: rgb(230, 230, 230);
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url("../../assets/images/background-register-pc.png");
+}
+
+/* Right side */
+
+.login_section, .join_title {
+    display: flex;
+}
+
+.login_section {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+    background-color: #5A32B0;
+}
+
+.join_title {
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.join_title h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.join_title h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #ffffff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.register_btn {
+    padding: 0.6rem 0.8rem;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: var(--font-alt);
+    background-color: #7977e2;
+    cursor: pointer;
+    transition: 0.4s all;
+    font-weight: 600;
+}
+
+.register_btn:hover {
+    background-color: #4c4ae270;
+}
+
+/* Padrão de estilo dos input text */
+.input_style{
+    padding: 0.3rem;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    outline: none;
+    padding: 0.5rem 0.8rem;
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    z-index: 1111;
+    color: white;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.mail_input, .password_input {
+    position: relative;
+    display: flex;
+}
+
+.input_style:focus,
+.input_style:valid {
+    color: #ad55d3;
+    border: 2px solid #ad55d3;
+}
+
+.input_style:focus + .labelline,
+.input_style:valid + .labelline{
+    background-color: #5A32B0;
+    transform: translateY(-150%);
+    z-index: 1111;
+    font-size: 14px;
+}
+
+.mail_input, .password_input, .login_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail_input > div, .password_input > div {
+    width:49%;
+}
+
+.labelline {
+    position: absolute;
+    font-size: 16px;
+    color: #a5a5a5;
+    padding: 0 10px;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+    color: #ad55d3;
+}
+
+.login_container {
+    width: 100%;
+    justify-content: center;
+}
+
+.login_btn {
+    padding: 0.6rem 0.8rem;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: var(--font-alt);
+    background-color: #D1D1D1;
+    cursor: pointer;
+    transition: 0.4s all;
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.login_btn:hover {
+    background-color: #d1d1d1ce;
+}
+
+/* Responsividade até 950px */
+
+@media (max-width: 950px) {
+
+    #container {
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .background {
+        display: none;
+    }
+
+    .login_section {
+        grid-column: 1/3;
+    }
+}
+
+/* Responsividade até 500px */
+
+@media (max-width: 500px) {
+
+    .login_section {
+        padding: 0 2rem;
+    }
+
+    .labelline {
+        font-size: 10px;
+    }
+
+    .input_style:focus + .labelline,
+    .input_style:valid + .labelline {
+        background-color: #5A32B0;
+        transform: translateY(-150%);
+        z-index: 1111;
+        font-size: 8px;
+    }
+
+    /* Padrão de estilo dos input text */
+    .input_style{
+        border: 1px solid #ffffff;
+        border-radius: 7px;
+        padding: 0.5rem 0.2rem;
+        font-size: 10px;
+        margin-top: 0.4rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .join_title h2 {
+        font-size: 18px;
+    }
+
+    .register_btn {
+        border-radius: 10px;
+        font-size: 12px;
+        transition: 0.4s all;
+    }
+
+    .login_btn {
+        padding: 0.6rem 0.5rem;
+        border-radius: 20px;
+        font-size: 12px;
+        margin-top: 1rem;
+    }
+
+    .labelline {
+        font-size: 12px;
+        left: 5px;
+    }
+
+    .input_style:focus + .labelline,
+    .input_style:valid + .labelline {
+        font-size: 10px;
+    }
+    
+}
