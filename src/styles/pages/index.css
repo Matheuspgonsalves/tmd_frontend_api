@@ -20,12 +20,6 @@
 }
 
 .register_section {
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.register_section {
     grid-column: 2/3;
     grid-row: 1/2;
     flex-direction: column;
@@ -36,24 +30,57 @@
 
 .join_title {
     justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.join_title h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.join_title h2::after {
+    content: '';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #ffffff;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
 }
 
 .login_btn {
-    padding: 0.5rem 0.8rem;
+    padding: 0.6rem 0.8rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: var(--font-alt);
+    background-color: #d4d4d4;
+    cursor: pointer;
+    transition: 0.4s all;
+    font-weight: 600;
+}
+
+.login_btn:hover {
+    background-color: #adadad;
 }
 
 /* Padrão de estilo dos input text */
 .input_style{
     padding: 0.3rem;
-    border: 1px solid #f0ffff;
+    border: 2px solid #f0ffff;
     border-radius: 10px;
     outline: none;
-    padding: 0.3rem 0.8rem;
+    padding: 0.5rem 0.8rem;
     width: 100%;
     background: transparent;
-    font-size: 18px;
+    font-size: 16px;
     z-index: 1111;
     color: white;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
 }
 
 .fullname_input, .mail_container, .confirm_mail_container, .password_container, .password_confirm_container {
@@ -76,7 +103,7 @@
     font-size: 14px;
 }
 
-.fullname_input, .mail_input, .password_input {
+.fullname_input, .mail_input, .password_input, .register_container {
     display: flex;
     justify-content: space-between;
 }
@@ -87,7 +114,7 @@
 
 .labelline {
     position: absolute;
-    font-size: 1.2rem;
+    font-size: 16px;
     color: #a5a5a5;
     padding: 0 10px;
     left: 10px;
@@ -100,7 +127,29 @@
     width: 100%;
 }
 
+.register_container {
+    width: 100%;
+    justify-content: center;
+}
 
+.register_btn {
+    padding: 0.6rem 0.8rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-family: var(--font-alt);
+    background-color: #d4d4d4;
+    cursor: pointer;
+    transition: 0.4s all;
+    font-weight: 600;
+    margin-top: 2rem;
+    width: 50%;
+}
+
+.register_btn:hover {
+    background-color: #adadad;
+}
 
 
 

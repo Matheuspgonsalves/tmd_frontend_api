@@ -1,0 +1,6 @@
+@import '../assets/fonts/poppins.css';
+@import '../assets/fonts/overpass.css';
+
+body {
+    font-family: var(--font-main);
+}
