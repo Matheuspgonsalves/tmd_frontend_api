@@ -1,0 +1,93 @@
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+/* Left side */
+.background {
+    background-color: rgb(230, 230, 230);
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+/* Right side */
+
+.register_section, .join_title {
+    display: flex;
+}
+
+.register_section {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 4rem;
+    background-color: rgb(77, 60, 155);
+}
+
+.join_title {
+    justify-content: space-between;
+}
+
+.login_btn {
+    padding: 0.5rem 0.8rem;
+}
+
+/* Padrão de estilo dos input text */
+.input_style{
+    padding: 0.3rem;
+    border: 1px solid #f0ffff;
+    border-radius: 10px;
+    outline: none;
+    padding: 0.3rem 0.8rem;
+    width: 100%;
+    background: transparent;
+    font-size: 18px;
+    z-index: 1111;
+    color: white;
+}
+
+.fullname_input, .mail_container .confirm_mail_container {
+    position: relative;
+    display: flex;
+}
+
+.input_style:focus,
+.input_style:valid {
+    color: #66ff00;
+    border: 2px solid #66ff00;
+}
+
+.input_style:focus + .labelline,
+.input_style:valid + .labelline{
+    color: #66ff00;
+    background-color: rgb(77, 60, 155);
+    transform: translateY(-150%);
+    z-index: 1111;
+}
+
+.fullname_input, .mail_input, .password_container, .password_confirm_container {
+    display: flex;
+}
+
+.labelline {
+    position: absolute;
+    font-size: 1.2rem;
+    color: #a5a5a5;
+    padding: 0 10px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.2s ease;
+}
+
+.fullname_input > input {
+    width: 100%;
+}
+
+
+
+
+
