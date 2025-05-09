@@ -14,8 +14,15 @@
 
 /* Right side */
 
+
 .register_section, .join_title {
     display: flex;
+}
+
+.register_section {
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .register_section {
@@ -49,7 +56,7 @@
     color: white;
 }
 
-.fullname_input, .mail_container .confirm_mail_container {
+.fullname_input, .mail_container, .confirm_mail_container, .password_container, .password_confirm_container {
     position: relative;
     display: flex;
 }
@@ -66,10 +73,16 @@
     background-color: rgb(77, 60, 155);
     transform: translateY(-150%);
     z-index: 1111;
+    font-size: 14px;
 }
 
-.fullname_input, .mail_input, .password_container, .password_confirm_container {
+.fullname_input, .mail_input, .password_input {
     display: flex;
+    justify-content: space-between;
+}
+
+.mail_input > div, .password_input > div {
+    width:49%;
 }
 
 .labelline {
